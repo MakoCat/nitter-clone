@@ -1,0 +1,83 @@
+.header {
+  background-color: rgb(31, 31, 31);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.far-left {
+  flex: 1;
+  height: 50px;
+}
+
+.header-container {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  margin: 10px;
+}
+
+.left-section {
+  color: rgb(255, 108,96);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 50px;
+  cursor: default;
+}
+
+.header-nitter-text:hover {
+  color: rgb(255, 172, 160);
+  cursor: pointer;
+}
+
+.middle-section {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.header-logo {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  align-items: center; 
+  flex: 1;
+  justify-content: end;
+  height: 50px;
+  cursor: default;
+}
+
+.right-section-logo {
+  height: 14px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.far-right {
+  flex: 1;
+  height: 50px;
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+ .far-left {width: 0px;}
+ .far-right {width: 0px;}
+}
